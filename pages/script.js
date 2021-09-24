@@ -4,6 +4,7 @@ let promisse = document.getElementById("promisse")
 let voltar = document.getElementById("voltar");
 let play = document.getElementById("play");
 let avante = document.getElementById("avante");
+let pausar = document.getElementById("play-2")
 let musicas = [
     "../audio/Davi Sacer - O Deus que Surpreende (DVD No Caminho do Milagre).mp3",
     "../audio/Davi Sacer - Deus de Promessas (DVD No Caminho do Milagre).mp3",
@@ -23,10 +24,10 @@ function proxime() {
     if (index_atual_da_musica >= musicas.length) {
         index_atual_da_musica = 0;
     }
-    // lembre-se que o indice é sempre sua posição menos 1  
-    // como assim ? se você quer a segunda musica da lista  
-    // então o seu indice é 1, porque 2-1 =1  
-    // se você quer a 4 musica, seu valor é 3, e assim sucessivamente
+    // lembre-se que o indie é sempre sua posição menos 1  
+    // como assim ? se vocêquer a segunda musica da lista  
+    // então o seu indice é1, porque 2-1 =1  
+    // se você quer a 4 musca, seu valor é 3, e assim sucessivamente
     // aqui eu altero o src da musica atual  
     music.src = musicas[index_atual_da_musica];
 
@@ -42,11 +43,11 @@ function musicAnterior() {
 }
 function playMusic() {
     music.play();
+}
+function pauseMusic(){
+    pausar.pause();
+}
 
-}
-function playMusic2() {
-    music.pause();
-}
 
 
 
