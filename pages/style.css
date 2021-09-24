@@ -59,3 +59,11 @@ main{
 #play-2{
     display: block;
 }
+@media (max-width: 900px){
+    .content-main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    
