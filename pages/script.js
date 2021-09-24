@@ -4,7 +4,7 @@ let promisse = document.getElementById("promisse")
 let voltar = document.getElementById("voltar");
 let play = document.getElementById("play");
 let avante = document.getElementById("avante");
-let pausar = document.getElementById("play-2")
+let pausar = document.getElementById("play2");
 let musicas = [
     "../audio/Davi Sacer - O Deus que Surpreende (DVD No Caminho do Milagre).mp3",
     "../audio/Davi Sacer - Deus de Promessas (DVD No Caminho do Milagre).mp3",
@@ -44,9 +44,10 @@ function musicAnterior() {
 function playMusic() {
     music.play();
 }
-function pauseMusic(){
-    pausar.pause();
+function pausarMusica(){
+    music.pause();
 }
+
 
 
 
